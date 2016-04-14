@@ -1,0 +1,133 @@
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP1 START @ 12:37:57
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+VERSION:	1.1.0
+PHP:		5.6.10 | SAPI: apache2handler
+SERVER:		Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0
+DOC ROOT:	/Applications/MAMP/htdocs/wordpress.local/nickymurray
+DOC ROOT 755:	true
+LOG FILE 644:	true
+BUILD NAME:	20151223_nickymurraydesign_567a86fe601972919151223113526
+REQUEST URL:	http://localhost/wordpress.local/nickymurray/installer.php
+
+********************************************************************************
+ARCHIVE SETUP
+********************************************************************************
+NAME:	20151223_nickymurraydesign_567a86fe601972919151223113526_archive.zip
+SIZE:	27.46MB
+ZIP:	Enabled (ZipArchive Support)
+EXTRACTING
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4758
+    [filename] => /Applications/MAMP/htdocs/wordpress.local/nickymurray/20151223_nickymurraydesign_567a86fe601972919151223113526_archive.zip
+    [comment] => 
+)
+COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to .orig
+- Reset of .htaccess/web.config files
+
+UPDATED FILES:
+- SQL FILE:  '/Applications/MAMP/htdocs/wordpress.local/nickymurray/installer-data.sql'
+- WP-CONFIG: '/Applications/MAMP/htdocs/wordpress.local/nickymurray/wp-config.php'
+
+ARCHIVE RUNTIME: 3.9317 sec.
+
+
+********************************************************************************
+DATABASE-ROUTINES
+********************************************************************************
+--------------------------------------
+SERVER ENVIROMENT
+--------------------------------------
+MYSQL VERSION:	5.5.42
+TIMEOUT:	5000
+MAXPACK:	1048576
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+DROP TABLE:	removed (13) tables
+QUERIES RAN:	1297
+
+wp_commentmeta: (0)
+wp_comments: (33)
+wp_duplicator_packages: (1)
+wp_fullbackslider: (0)
+wp_links: (0)
+wp_options: (220)
+wp_postmeta: (516)
+wp_posts: (465)
+wp_term_relationships: (2)
+wp_term_taxonomy: (2)
+wp_terms: (2)
+wp_usermeta: (39)
+wp_users: (2)
+Removed '47' cache/transient rows
+
+SECTION RUNTIME: 0.6101 sec.
+
+********************************************************************************
+STEP1 COMPLETE @ 12:38:01 - TOTAL RUNTIME: 4.5563 sec.
+********************************************************************************
+
+
+
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP2 START @ 12:38:04
+NOTICE: Do not post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	 utf8 
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments~ (33)
+wp_duplicator_packages^ (0)
+wp_fullbackslider^ (0)
+wp_links^ (0)
+wp_options~ (171)
+wp_postmeta~ (516)
+wp_posts~ (465)
+wp_term_relationships~ (2)
+wp_term_taxonomy~ (2)
+wp_terms~ (2)
+wp_usermeta~ (39)
+wp_users~ (2)
+--------------------------------------
+SEARCH1:	'http://www.nickymurraydesign.com' 
+REPLACE1:	'http://localhost:8888/wordpress.local/nickymurray' 
+SEARCH2:	'/homepages/35/d385923568/htdocs/www.nickymurraydesign.co.uk/' 
+REPLACE2:	'/Applications/MAMP/htdocs/wordpress.local/nickymurray/' 
+SCANNED:	Tables:13 | Rows:1232 | Cells:14140 
+UPDATED:	Tables:1 | Rows:112 |Cells:126 
+ERRORS:		0 
+RUNTIME:	2.542800 sec
+
+********************************************************************************
+START FINAL CLEANUP: 12:38:07
+********************************************************************************
+UPDATE `wp_blogs` SET domain = 'localhost' WHERE domain = 'www.nickymurraydesign.com'
+
+--------------------------------------
+WARNINGS
+--------------------------------------
+WP-CONFIG WARNING: The wp-config.php has one or more of these values "WP_CONTENT_DIR, WP_CONTENT_URL, WPCACHEHOME, COOKIE_DOMAIN, WP_SITEURL, WP_HOME, WP_TEMP_DIR" which may cause issues please validate these values by opening the file.
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+created basic .htaccess file.  If using IIS web.config this process will need to be done manually.
+********************************************************************************
+STEP 2 COMPLETE @ 12:38:07 - TOTAL RUNTIME: 2.6041 sec.
+********************************************************************************

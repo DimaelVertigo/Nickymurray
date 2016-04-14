@@ -1,0 +1,18 @@
+/* SunRain Theme by D5 Creation, www.d5creation.com
+/* =Responsive Design 
+-------------------------------------------------------------- */
+@media screen and (max-width:850px){
+
+body, #sunrain-main-menu { min-width: 0; width: 100%; max-width: 100%; } 
+#sunrain-main-menu ul { margin: 0; }
+.bqpcontainer-box { width: 86.2%; }
+#social .facebook-link, #social .twitter-link, #social .youtube-link, #social .gplus-link, #social .picassa-link, #social .li-link, #social .feed-link { margin: 0 2px; }
+#content { width: 100%; }
+#right-sidebar { float: left; width: 100%; padding: 0; min-width: 200px; }
+#right-sidebar .widget { clear: none; display: inline-block; float: left; margin-right: 10px;  width: 23%; min-width: 200px; }
+
+}
+
+@media screen and (max-width:500px){
+	#sunrain-top-menu input#s:focus { width: 100px;  }	
+}
